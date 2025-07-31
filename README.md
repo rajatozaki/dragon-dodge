@@ -1,49 +1,57 @@
 # Dragon's Dodge: An Endless Flight
 
-**Dragon's Dodge** is a simple 3D browser game built using [Three.js](https://threejs.org/). You control a flying dragon and dodge skyscrapers as long as you can. The longer you survive, the higher your score.
+**Dragon's Dodge** is a 3D endless-runner browser game built using Three.js. You pilot a flying dragon and navigate through a city filled with randomly generated buildings. The challenge is simple: survive as long as you can without crashing.
+
+Live demo: [https://dragon-dodge.vercel.app/](https://dragon-dodge.vercel.app/)
 
 ## How to Play
 
-- Use `A` / `D` or `←` / `→` to steer the dragon left or right.
-- Avoid crashing into buildings.
-- The game ends on collision. Press "Fly Again" to restart.
-
-## Tech Stack
-
-- HTML5 + CSS3
-- JavaScript (ES6 Modules)
-- [Three.js](https://threejs.org/)
-- Google Fonts (Poppins)
+- Use `A` / `D` or `←` / `→` keys to steer left and right
+- Avoid colliding with buildings
+- The game ends when you crash
+- Press **Start Game** to begin, and **Fly Again** to restart
 
 ## Features
 
-- Smooth 3D animation and motion
-- Endless environment with randomized buildings
-- Dynamic camera and fog for depth
-- Frosted-glass style UI with score tracking
-- Homepage animation loop before the game starts
+- Smooth 3D gameplay using Three.js
+- Snake-like animated dragon with body segments
+- Dynamic camera tracking and environmental fog
+- Procedural building placement to simulate an endless city
+- Frosted-glass style UI for start and game over screens
+- Live score tracking
+- Responsive full-screen canvas
 
-## File Structure
+## Tech Stack
+
+- HTML5
+- CSS3
+- JavaScript (ES6 Modules)
+- Three.js (via CDN)
+
+## Folder Structure
 
 ```
 .
-├── index.html        # Main HTML page and UI containers
-├── main.js           # Game logic and rendering loop
-└── style.css         # UI styling and layout
+├── index.html      # Entry point with canvas and UI
+├── main.js         # Game logic, rendering, controls
+└── style.css       # Layout, typography, UI styling
 ```
 
 ## Run Locally
 
-1. Clone the repository:
-   ```
-   git clone https://github.com/your-username/dragons-dodge.git
-   cd dragons-dodge
-   ```
+No setup required. Just clone the repo and open `index.html` in any modern browser.
 
-2. Open `index.html` in any modern browser (Chrome, Firefox, Edge).
+```bash
+git clone https://github.com/your-username/dragons-dodge.git
+cd dragons-dodge
+```
 
-> No build tools or local server required.
+Then open `index.html` in your browser.
 
 ## Credits
 
-Built using Three.js. Designed as a minimalist endless-runner style game.
+Built using [Three.js](https://threejs.org/) as a lightweight demo of basic 3D game mechanics in the browser.
+
+---
+
+Feel free to fork or build on top of it.
