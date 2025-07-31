@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dragon's Dodge</title>
+    
+    <!-- Link to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="game-canvas"></canvas>
+
+    <div id="ui-container">
+        <div id="score" class="hidden">Score: 0</div>
+        <div id="game-over" class="hidden">
+            <p>Game Over</p>
+            <button id="restart-button">Fly Again</button>
+        </div>
+        <div id="title-screen">
+            <p class="title-main">Dragon's Dodge</p>
+            <p class="title-sub">AN ENDLESS FLIGHT</p>
+            <p class="controls">Use [A] & [D] or [←] & [→] to Steer</p>
+            <button id="start-button">Start Game</button>
+        </div>
+    </div>
+
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.160.0/build/three.module.js"
+            }
+        }
+    </script>
+    <script type="module" src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+/* Import the Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    overflow: hidden;
+    /* Use the new font with a fallback */
+    font-family: 'Poppins', sans-serif;
+}
+
+#game-canvas {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+}
+
+#ui-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+    pointer-events: none;
+}
+
+#score {
+    position: absolute;
+    top: 20px;
+    font-size: 2.5em;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+}
+
+/* This is the new "Frosted Glass" style for our panels */
+#title-screen, #game-over {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    /* The Glass Effect */
+    background-color: rgba(255, 255, 255, 0.15); /* Semi-transparent white */
+    backdrop-filter: blur(10px); /* This blurs the background! */
+    -webkit-backdrop-filter: blur(10px); /* For Safari compatibility */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+
+    padding: 40px 60px;
+    border-radius: 15px;
+}
+
+.title-main {
+    font-size: 4em;
+    font-weight: 700; /* Bold */
+    margin: 0;
+}
+
+.title-sub {
+    font-size: 1.2em;
+    font-weight: 400; /* Regular */
+    letter-spacing: 4px; /* Spread out the letters */
+    margin: 0;
+    opacity: 0.8;
+}
+
+#game-over p {
+    font-size: 4em;
+    font-weight: bold;
+    margin: 0;
+}
+
+.controls {
+    font-size: 1em !important;
+    margin-top: 30px !important;
+    color: #eee;
+}
+
+/* Enhanced Button Styles */
+#start-button, #restart-button {
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif; /* Ensure button uses the font */
+    margin-top: 30px;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 50px; /* Rounded pill shape */
+    background-color: #e67e22;
+    color: white;
+    cursor: pointer;
+    pointer-events: all;
+    transition: transform 0.2s ease-out, background-color 0.2s ease; /* Smooth transition */
+}
+
+#start-button:hover, #restart-button:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    background-color: #f39c12; /* Brighter orange on hover */
+}
+
+.hidden {
+    display: none !important;
+}
